@@ -23,7 +23,6 @@ class PersonasController extends Controller
         $persona = new Persona();
 
         $persona->nombre = $datos->nombre;
-        $persona->dni = $datos->dni;
         $persona->primerApellido = $datos->primerApellido;
         $persona->segundoApellido = $datos->segundoApellido;
         $persona->fechaNacimiento = $datos->fechaNacimiento;

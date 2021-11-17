@@ -15,10 +15,10 @@ class CreatePersonasTable extends Migration
     {
         Schema::create('personas', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre',150);
+            $table->string('nombre');
             $table->string('primerApellido',150);
             $table->string('segundoApellido',150);
-            $table->date('fechaNacimiento')->unsigned()->unique();
+            $table->dateTime('fechaNacimiento');
             $table->timestamps();
         });
     }
